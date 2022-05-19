@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+    <!-- header -->
+    <div>
+      <div id="header">
+        <nav class="navbar fixed-top bg-dark">
+          <div class="container-fluid">
+            <div class="d-flex">
+              <img class="logo align-self-center" src="imagenes/logop.jpg">
+              <a class="logotext align-self-center fs-2" href="index.html">bukis</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas bg-dark offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 text-light" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-2 text-light" href="productos.html">Productos</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link fs-2 text-light" href="#">Preguntas</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link fs-2 text-light" href="#">Contacto</a>
+                  </li>
+                </ul>
+                <form class="mt-4 d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- productos destacados -->
+      <div class="pd col-10 offset-1">
+        <p class="text-secondary text-dark fw-bold fs-1 mb-5">Productos:</p>
+        <div class="row d-flex flex-wrap justify-content-lg-between justify-content-center text-center mx-auto">
+          <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/matea.jpg">
+            <p class="mt-2 mb-0 text-light">Mate de algarrobo</p>
+          </div>
+          <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/matec.jpg">
+            <p class="mt-2 mb-0 text-light">Mate de calabaza</p>
+          </div>
+          <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/mateb.jpg">
+            <p class="mt-2 mb-0 text-light">Mate personalizado</p>
+          </div>
+          <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/libretaa.jpg">
+            <p class="mt-2 mb-0 text-light">Libreta acuarelas</p>
+          </div>
+          <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/libretac.jpg">
+            <p class="mt-2 mb-0 text-light">Libreta descuento</p>
+           </div>
+           <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/libretab.jpg">
+            <p class="mt-2 mb-0 text-light">Libreta personalizada</p>
+           </div>
+           <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+             <img class="img-fluid" src="imagenes/bolsoa.jpg">
+             <p class="mt-2 mb-0 text-light">Bolso lienzo ama</p>
+           </div>
+           <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/bolsoc.jpg">
+            <p class="mt-2 mb-0 text-light">Bolso lienzo azu</p>
+          </div>
+          <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/bolsob.jpg">
+            <p class="mt-2 mb-0 text-light">Bolso pintado</p>
+          </div>
+         </div>
+      </div>
+      <div id="footer">
+        <div class="boton d-flex flex-row mt-5 bg-dark py-3 col-12 text-center align-items-center justify-content-around">
+          <div class="col-3">
+            <div class="dropup-center dropup">
+              <button class="botontext btn btn-secondary dropdown-toggle " type="button" id="dropupCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropupCenterBtn">
+                <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="preguntas.html">Preguntas</a></li>
+                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="redes">
+              <p class="re">Seguinos en nuestras redes</p>
+              <div class="redima">
+                <img class="insta" src="imagenes/instagram.jpg">
+                <img class="insta" src="imagenes/twitter.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="pagosinfo col-3">
+            <img class="pagos" src="imagenes/pagos.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

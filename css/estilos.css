@@ -1,0 +1,114 @@
+body{
+	background-image: url(../imagenes/fondo2.jpg);
+}
+#header{
+}
+.logo{
+	height: 2.5rem;
+	margin-right: 10px;
+}
+.logotext{
+	text-decoration: none;
+	color: #bf957f;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.logotext:hover{
+	color: #bf957f;
+	opacity: 0.8;
+}
+.banner{
+	margin-top: 10rem;
+	border: solid black 5px;
+	border-radius: 5px;
+	padding: 0;
+}
+.pd{
+	margin-top: 80px;
+}
+.info img{
+	height: 60px;
+}
+.producto{
+	border: solid 20px black;
+	background-color: black;
+	border-radius: 10px;
+	transition: all 250ms;
+}
+.producto:hover{
+	transform: scale(1.15);
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+}
+.insta{
+	height: 35px;
+	margin-top: 25px;
+}
+.re{
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+}
+.pagos{
+	height: 70px;
+}
+
+@media all and (max-width: 992px){
+
+	.info{
+		font-size: 0.8rem;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.info img{
+		height: 40px;
+	}
+	.re{
+		font-size: 0.9rem;
+	}
+	.insta{
+		height: 30px;
+		margin-top: 20px;
+	}
+	.pagos{
+		height: 60px;
+	}
+}
+@media all and (max-width: 768px){
+	.info img{
+		height: 35px;
+	}
+	.re{
+		font-size: 0.8rem;
+	}
+	.insta{
+		height: 25px;
+		margin-top: 15px;
+	}
+	.pagos{
+		height: 50px;
+	}
+}
+@media all and (max-width: 576px){
+	.re{
+		font-size: 0.7rem;
+	}
+	.insta{
+		height: 20px;
+		margin-top: 10px;
+	}
+	.pagos{
+		height: 30px;
+	}
+}
+@media all and (max-width: 394px){
+	.re{
+		font-size: 0.65rem;
+	}
+	.insta{
+		height: 18px;
+		margin-top: 8px;
+	}
+	.pagos{
+		height: 25px;
+	}
+}

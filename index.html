@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+    <div>
+    <!-- header -->
+      <div id="header">
+        <nav class="navbar fixed-top bg-dark">
+          <div class="container-fluid">
+            <div class="d-flex">
+              <img class="logo align-self-center" src="imagenes/logop.jpg">
+              <a class="logotext align-self-center fs-2" href="index.html">bukis</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas bg-dark offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link fs-3 text-light" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-3 text-light" href="productos.html">Productos</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link fs-3 text-light" href="#">Preguntas</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link fs-3 text-light" href="#">Contacto</a>
+                  </li>
+                </ul>
+                <form class="mt-4 d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Banner -->
+      <div class="banner container-fluid container-xl">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/banner1.jpg" class="img-fluid d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/banner2.jpg" class="img-fluid d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/banner3.jpg" class="img-fluid d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="relleno mt-5 col-10 offset-1 d-flex flex-row justify-content-around flex-wrap container-xl">
+        <div class="info d-flex flex-lg-row flex-column col-12 col-md-4">
+          <img class="align-self-center" src="imagenes/envios.png">
+          <div class="align-self-center">
+            <p class="mb-0 mx-2">ENVIOS</p>
+            <p class="mb-0 mx-2">¡A todo el país! A domicilio o a la sucursal de CA más cercana</p>
+          </div>
+        </div>
+        <div class="info d-flex flex-lg-row flex-column col-12 col-md-4">
+          <img class="align-self-center" src="imagenes/tarjeta.png">
+          <div class="align-self-center">
+            <p class="mb-0 mx-2">CON TODAS LAS TARJETAS DE CREDITO</p>
+            <p class="mb-0 mx-2">que encuentres en mercado pago</p>
+          </div>
+        </div>
+        <div class="info d-flex flex-lg-row flex-column col-12 col-md-4">
+          <img class="align-self-center" src="imagenes/seguro.png">
+          <div class="align-self-center">
+            <p class="mb-0 mx-2">SITIO SEGURO</p>
+            <p class="mb-0 mx-2">Protegemos tus datos</p>
+          </div>
+        </div>
+        <div class=" border width-100 border-dark"></div>
+      </div>
+      <!-- productos destacados -->
+      <div class="col-10 mt-5 offset-1 text-center">
+        <p class="text-secondary text-dark fw-bold fs-1 mb-5">Productos destacados</p>
+        <div class="row d-flex flex-wrap justify-content-lg-between justify-content-center container-md mx-auto">
+          <div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/matea.jpg" alt="matea">
+            <p class="mt-2 mb-0 text-light">Mate de algarrobo</p>
+          </div>
+          <div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/mateb.jpg">
+            <p class="mt-2 mb-0 text-light">Mate personalizado</p>
+          </div>
+          <div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-8">
+            <img class="img-fluid" src="imagenes/libretab.jpg">
+            <p class="mt-2 mb-0 text-light">Libreta personalizada</p>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="boton d-flex flex-row mt-5 bg-dark py-3 col-12 text-center align-items-center justify-content-around">
+          <div class="col-3">
+            <div class="dropup-center dropup">
+              <button class="botontext btn btn-secondary dropdown-toggle " type="button" id="dropupCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropupCenterBtn">
+                <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="preguntas.html">Preguntas</a></li>
+                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="redes">
+              <p class="re">Seguinos en nuestras redes</p>
+              <div class="redima">
+                <img class="insta" src="imagenes/instagram.jpg">
+                <img class="insta" src="imagenes/twitter.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="pagosinfo col-3">
+            <img class="pagos" src="imagenes/pagos.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
